@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 
-	<groupId>com.orientech.grabby</groupId>
+	<groupId>com.xyz</groupId>
 	<artifactId>grabby</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
@@ -13,6 +13,7 @@
 	</dependencyManagement>
 
 	<modules>
-		<module>grabby-core</module>
-	</modules>	
+		<module>query-service</module>
+		<module>weather-report</module>
+	</modules>
 </project>

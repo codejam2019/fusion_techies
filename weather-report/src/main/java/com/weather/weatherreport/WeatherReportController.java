@@ -15,8 +15,7 @@ public class WeatherReportController {
 	}
 	
 	@RequestMapping(value = "/getCityWeatherDetails", method = RequestMethod.POST)
-    public String citySensorDetails() {
-		
+	public String citySensorDetails() {
 		return "welcome to weather forcast";
 	}
 	

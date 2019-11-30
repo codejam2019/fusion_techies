@@ -8,11 +8,11 @@
         <version>2.1.7.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>com.orientech.grabby.core</groupId>
-    <packaging>war</packaging>
-    <artifactId>grabby-core</artifactId>
+    <groupId>com.xyz.query</groupId>
+    <packaging>jar</packaging>
+    <artifactId>query-service</artifactId>
     <version>0.0.1-alpha</version>
-    <name>Grabby Core</name>
+    <name>Query Service</name>
     <description>Grabby Universal Backend</description>
 
     <properties>
@@ -117,14 +117,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <spring.profiles.active>prod</spring.profiles.active>
-            </properties>
-        </profile>
-    </profiles>
-
 </project>
