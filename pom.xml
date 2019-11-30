@@ -5,7 +5,7 @@
 	
 
 	<groupId>com.xyz</groupId>
-	<artifactId>grabby</artifactId>
+	<artifactId>weather-report</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
 	<dependencyManagement>
@@ -13,7 +13,6 @@
 	</dependencyManagement>
 
 	<modules>
-		<module>query-service</module>
 		<module>weather-report</module>
 	</modules>
 </project>

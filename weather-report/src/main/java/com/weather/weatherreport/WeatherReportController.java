@@ -18,5 +18,5 @@ public class WeatherReportController {
 	public String citySensorDetails() {
 		return "welcome to weather forcast";
 	}
-	
+
 }
