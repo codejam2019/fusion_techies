@@ -2,12 +2,13 @@ package com.weather.weatherreport.dto;
 
 import java.util.List;
 
-public class CityFilterDto {
+public class RequestDto {
 
 	private Integer cityId;
 	private Integer startTime;
 	private Integer endTime;
-	private List<String> sensorId;
+	private List<String> query;
+	private Integer sensorId;
 	
 	public Integer getCityId() {
 		return cityId;
@@ -27,11 +28,21 @@ public class CityFilterDto {
 	public void setEndTime(Integer endTime) {
 		this.endTime = endTime;
 	}
-	public List<String> getSensorId() {
+	
+	public List<String> getQuery() {
+		return query;
+	}
+	public void setQuery(List<String> query) {
+		this.query = query;
+	}
+	public Integer getSensorId() {
 		return sensorId;
 	}
-	public void setSensorId(List<String> sensorId) {
+	public void setSensorId(Integer sensorId) {
 		this.sensorId = sensorId;
 	}
-	
+	public RequestDto()
+	{
+		
+	}
 }
