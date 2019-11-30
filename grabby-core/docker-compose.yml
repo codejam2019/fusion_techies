@@ -1,0 +1,37 @@
+version: '3.7'
+services:
+  mysql:
+   image: mysql/mysql-server:5.7
+   environment:
+#    - MYSQL_ROOT_PASSWORD= dockerp
+    - MYSQL_USER='docker'
+    - MYSQL_DATABASE='grabby_prod'
+    - MYSQL_PASSWORD='dockerp'
+    - MYSQL_ROOT_HOST='%'
+    - MYSQL_ONETIME_PASSWORD=true
+   ports:
+    - "3306:3306"
+   restart: always
+#   volumes:
+#      ./data/:/var/lib/mysql
+   networks:
+      movie-quote-network:
+        aliases:
+          - movie-quote-database
+
+  grabby:
+   build:
+     context: ./
+     dockerfile: Dockerfile
+   image: grabby-prod
+   ports:
+    - "7070:7070"
+   depends_on:
+     - mysql
+   networks:
+      movie-quote-network:
+        aliases:
+          - movie-quote-service
+
+networks:
+  movie-quote-network:
