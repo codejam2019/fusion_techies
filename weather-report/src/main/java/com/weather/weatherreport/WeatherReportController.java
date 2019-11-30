@@ -9,10 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeatherReportController {
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String candidateForm(@PathVariable("formUniqueId") String formUniqueId) {
+    public String hello(@PathVariable("formUniqueId") String formUniqueId) {
 		
 		return "welcome to weather forcast";
 	}
 	
+	@RequestMapping(value = "/getCityWeatherDetails", method = RequestMethod.POST)
+    public String citySensorDetails() {
+		
+		return "welcome to weather forcast";
+	}
 	
 }
