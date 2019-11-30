@@ -15,7 +15,16 @@ public class CityTimeRangeResponseDto {
 		this.cityName = cityName;
 	}
 
-	
+	public CityTimeRangeResponseDto()
+	{
+		
+	}
+	public List<WeatherDetails> getWeatherDetails() {
+		return weatherDetails;
+	}
+	public void setWeatherDetails(List<WeatherDetails> weatherDetails) {
+		this.weatherDetails = weatherDetails;
+	}
 	
 	
 }

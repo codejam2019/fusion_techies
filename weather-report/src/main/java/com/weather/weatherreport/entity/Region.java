@@ -3,7 +3,7 @@ package com.weather.weatherreport.entity;
 
 import javax.persistence.*;
 
-@Table(name = "region")
+@Entity(name = "region")
 public class Region {
 
   @Id

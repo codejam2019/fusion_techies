@@ -2,7 +2,7 @@ package com.weather.weatherreport.entity;
 
 import javax.persistence.*;
 
-@Table(name = "sensorData")
+@Entity(name = "sensorData")
 public class SensorData {
 
   @Id
